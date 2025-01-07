@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import streamlit as st
 import os
 
-SBR_WEBDRIVER = 'os.getenv("SBR_WEBDRIVER")'
+SBR_WEBDRIVER = 'brd-customer-hl_ff81bf84-zone-ai_mapaula_scraper:mzmixte3n2h7'
    
 def scrape_website(website):
     print("Connecting to the website...")
@@ -13,7 +13,7 @@ def scrape_website(website):
     with Remote(sbr_connection,options=ChromeOptions()) as driver:
         print('Connected! Navigating to the website...')
         driver.get('website')
-
+        #Captcha
         print('Waiting for the Captcha to be solved...')
         solve_res = driver.execute('executeCdpCommand', 
         {
@@ -59,4 +59,3 @@ if "dom_content" in st.session_state.dom_content:
 
             dom_chunks = split_dom_content(st.session_state.dom_content)
 
-    
