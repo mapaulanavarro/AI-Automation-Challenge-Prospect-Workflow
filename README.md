@@ -26,9 +26,9 @@ Additional info to keep in mind:
 For this project, I developed a Streamlit web interface that allows users to input a company URL. The system leverages Selenium for dynamic web scraping, extracting relevant company information directly from the website. 
 Additionally, I integrated LangChain to interact with the Ollama AI model, enabling it to generate prompts and retrieve the specific insights requested. This combination creates a seamless workflow for automated company research and analysis.
 
-This code work for the Chrome version 131.0.6779.204
+This code work for the Chrome version 131.0.6779.205
 
-This code only work if you have Ollama version3 installed.
+This code only work if you have Ollama version3.2 installed.
 
 The reasoning behind this approach lies in creating an efficient, user-friendly, and dynamic system for automated company research. 
 1. Ease of Use: Streamlit provides a simple and interactive interface for users to input a company URL, making the tool accessible to non-technical users like sales teams.
