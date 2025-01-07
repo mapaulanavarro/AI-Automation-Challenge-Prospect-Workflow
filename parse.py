@@ -1,5 +1,5 @@
 #Ollama is used to open LLM locally and not rely on OpenAI API, 
-it can be changed to Gemini or any other.#
+#it can be changed to Gemini or any other.
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
